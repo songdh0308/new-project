@@ -1,0 +1,34 @@
+//用@import引入mixins.scss文件
+@import'./mixins.scss';
+h1{
+    width:100px;
+    height:30px;
+    @include border;    ////用@include引入mixins.scss文件中的样式
+	font-size:1em;
+}
+div{
+	font-size:20px;
+}
+.nav{
+    height:100px;
+    ul{
+        margin:0;
+        li{
+            float:left;
+            list-style:none;
+            padding:5px;
+        }
+        a{
+            display:block;
+            color:#000;
+            &:hover{   //表示鼠标经过a时的样式变化 &是离最近的选择器的样式
+                color:#f60;
+                background:red;
+            }
+        }
+    }
+
+    & &-text{
+        font-size:15px;
+    }
+}

@@ -1,0 +1,5 @@
+body,ul,h1,h2{margin:0;padding:0}li{list-style:none}
+
+div{background:pink;text-align:center}
+
+*{margin:0;padding:0}h1{color:yellow;font-size:23px}div{width:100px;height:100px}
